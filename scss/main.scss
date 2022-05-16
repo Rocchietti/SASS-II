@@ -20,7 +20,7 @@ body {
     "article section"
     "footer footer";
     grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
+    row-gap: $padding;
 }
 section{
     grid-area: section;
@@ -55,13 +55,13 @@ nav{
 }
 .tituloSections{
     display: flex;
-    padding: 10px; 
+    padding: $padding; 
     justify-content: space-evenly;
 }
 .link{
     text-align: center;
     min-width: 130px;
-    padding: 5px 10px;
+    padding: 5px $padding;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -144,7 +144,7 @@ iframe{
 .seccion2{
     h3{
         &:hover{
-            Padding-left: 10px
+            padding-left: $padding ;
         }
     }
 }
@@ -152,7 +152,7 @@ iframe{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: $padding;
 }
 footer{
     background-image: url("IMG/well\ i\ never.jpg"); 
@@ -188,15 +188,28 @@ footer{
     font-style: normal;
     border-left: 3px solid seagreen;
     color: $color;
-    padding: 6px;
+    padding: $padding/2;
     transition: all 1s;  
     }
 }
-.columna p:hover{
+.columna{
     p{
         &:hover{ 
-        padding-left:10px;
+        padding-left: $padding;
         }
+    }
+}
+$redes: (
+    gmail: rgba(216, 38, 15, 0.933),
+    instagram: rgba(255, 255, 255, 0.171),
+    telegram: rgba(0, 102, 255, 0.856),
+    twitter: rgb(0, 140, 255),
+    whatsapp: rgb(62, 233, 10) 
+);
+@each $red, $color in $redes {
+    .red-#{$red} {
+        background-color: $color;
+        border-radius: 7px;
     }
 }
 .columna2{
@@ -216,39 +229,42 @@ footer{
 }
 .copyright{
     p{
-    color: $color;   
+    color: $color;  
     }
 }
 .icons{
     display: flex;
     transition: font-size 2s;
 }
-.icons:hover{
-    font-size: 18px;
+.icons{
+    &:hover{
+        font-size: 18px;
+    }
 }
 .icons{
     img{
        width: 20px;
-    height: 15px;        
+       height: 20px;  
+       margin: 5px;      
     }
 }
 .icons{
     p{
-    margin: 0;
-    padding: 5px;        
+    margin-top: 1px;
+    padding: $padding/1.25;        
     }
 }
 .conteinCopy{
-    padding: 10px;
+    padding: $padding;
     display: flex;
     justify-content: space-between;
     align-items:baseline
 }
 .aboutUs{
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-bottom-left-radius: $padding;
+    border-bottom-right-radius: $padding;
+    border-top-left-radius: $padding;
+    border-top-right-radius: $padding;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,14 +282,14 @@ position: relative;
 }
 .descript{
     h2{
-    padding: 6px;
+    padding: $padding;
     transition: all 1s;        
     }
 }
-.descript h2:hover{
+.descript{
     h2{
         &:hover{
-        padding: 10px;
+        padding: $padding;
         }
     }
 }
@@ -306,18 +322,18 @@ article{
 .input{
     font-family: inherit;
     padding: 4px;
-    margin: 10px
+    margin: $padding/1.5;
 }
 .mensaje{
     font-family: inherit;
-    margin:10px;
-    padding: 4px;
+    margin: $padding;
+    padding: $padding/2.5;
 }
 .fm{
     h2{
     color: rgba(145, 255, 2, 0.63);
     border-left: 3px solid rgba(145, 255, 2, 0.63);
-    padding: 5px;        
+    padding: $padding;        
     }
 }
 .dedicar{
@@ -329,7 +345,7 @@ article{
 }
 .dedicar{
     h2{
-    padding: 10px;
+    padding: $padding;
     border: 20px groove rgba(155, 145, 5, 0.733);        
     }
 }
@@ -360,7 +376,7 @@ article{
     text-align: left;       
     }
 }
-.premiere h3{
+.premiere{
     h3{
     color: rgb(30, 255, 0);
     font-family: merriweather, serif;
@@ -371,10 +387,10 @@ article{
     transition: all 1s;        
     }
 }
-.premiere h3:hover{
+.premiere{
     h3{
         &:hover{
-            padding: 10px;
+            padding: $padding;
         }
     }
 }
@@ -399,14 +415,14 @@ article{
     font-weight: bold;
     text-align: center;
     border-left: 3px solid rgba(145, 255, 2, 0.63);
-    padding: 5px;
+    padding: $padding;
     transition: all 1s;        
     }
 }
 .effects{
     h3{
         &:hover{
-            padding: 10px;    
+            padding: $padding;    
         }
     }
 }
@@ -427,7 +443,7 @@ caption{
 }
 th,td{
     border: 1px solid rgb(161, 97, 0);
-    padding: 5px;
+    padding: $padding;
 }
 tfoot{
     text-align: center;

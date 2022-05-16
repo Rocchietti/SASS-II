@@ -14,10 +14,7 @@ body {
 
 .contenedor {
   display: grid;
-  grid-template-areas: "header header"
- "nav nav"
- "article section"
- "footer footer";
+  grid-template-areas: "header header" "nav nav" "article section" "footer footer";
   grid-template-columns: 1fr 1fr;
   row-gap: 10px; }
 
@@ -126,7 +123,7 @@ iframe {
   transition: all 1s; }
 
 .seccion2 h3:hover {
-  Padding-left: 10px; }
+  padding-left: 10px; }
 
 .flex {
   display: flex;
@@ -165,11 +162,31 @@ footer {
   font-style: normal;
   border-left: 3px solid seagreen;
   color: whitesmoke;
-  padding: 6px;
+  padding: 5px;
   transition: all 1s; }
 
-.columna p:hover p:hover {
+.columna p:hover {
   padding-left: 10px; }
+
+.red-gmail {
+  background-color: rgba(216, 38, 15, 0.933);
+  border-radius: 7px; }
+
+.red-instagram {
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 7px; }
+
+.red-telegram {
+  background-color: rgba(0, 102, 255, 0.856);
+  border-radius: 7px; }
+
+.red-twitter {
+  background-color: #008cff;
+  border-radius: 7px; }
+
+.red-whatsapp {
+  background-color: #3ee90a;
+  border-radius: 7px; }
 
 .columna2 p {
   color: whitesmoke; }
@@ -194,11 +211,12 @@ footer {
 
 .icons img {
   width: 20px;
-  height: 15px; }
+  height: 20px;
+  margin: 5px; }
 
 .icons p {
-  margin: 0;
-  padding: 5px; }
+  margin-top: 1px;
+  padding: 8px; }
 
 .conteinCopy {
   padding: 10px;
@@ -207,10 +225,10 @@ footer {
   align-items: baseline; }
 
 .aboutUs {
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -227,10 +245,10 @@ footer {
   text-align: left; }
 
 .descript h2 {
-  padding: 6px;
+  padding: 10px;
   transition: all 1s; }
 
-.descript h2:hover h2:hover {
+.descript h2:hover {
   padding: 10px; }
 
 .program {
@@ -260,7 +278,7 @@ article h1 {
 .input {
   font-family: inherit;
   padding: 4px;
-  margin: 10px; }
+  margin: 6.66667px; }
 
 .mensaje {
   font-family: inherit;
@@ -270,7 +288,7 @@ article h1 {
 .fm h2 {
   color: rgba(145, 255, 2, 0.63);
   border-left: 3px solid rgba(145, 255, 2, 0.63);
-  padding: 5px; }
+  padding: 10px; }
 
 .dedicar {
   color: whitesmoke;
@@ -306,7 +324,7 @@ article h1 {
   font-weight: bold;
   text-align: left; }
 
-.premiere h3 h3 {
+.premiere h3 {
   color: #1eff00;
   font-family: merriweather, serif;
   font-weight: bold;
@@ -315,7 +333,7 @@ article h1 {
   padding: 5px;
   transition: all 1s; }
 
-.premiere h3:hover h3:hover {
+.premiere h3:hover {
   padding: 10px; }
 
 .aff {
@@ -336,7 +354,7 @@ article h1 {
   font-weight: bold;
   text-align: center;
   border-left: 3px solid rgba(145, 255, 2, 0.63);
-  padding: 5px;
+  padding: 10px;
   transition: all 1s; }
 
 .effects h3:hover {
@@ -359,7 +377,7 @@ caption {
 
 th, td {
   border: 1px solid #a16100;
-  padding: 5px; }
+  padding: 10px; }
 
 tfoot {
   text-align: center; }
@@ -377,16 +395,12 @@ tfoot {
   font-size: 8em;
   background-color: #18191f;
   color: whitesmoke;
-  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
- 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
- inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
- inset 2px 2px 10px #00000080;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
   border-radius: 29px;
   padding: 11px 19px;
   margin: 0 40px;
   animation: animate 3s linear infinite;
-  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
- 0 0 200px #0072ff; }
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff; }
 
 #twitter {
   animation-delay: 0.3s; }
@@ -427,8 +441,4 @@ tfoot {
   h1, h2, h3 {
     font-size: 50px; }
   .contenedor {
-    grid-template-areas: "header header header"
- "nav nav nav"
- "article article article"
- "article section section"
- "footer footer footer"; } }
+    grid-template-areas: "header header header" "nav nav nav" "article article article" "article section section" "footer footer footer"; } }
