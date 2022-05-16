@@ -1,4 +1,5 @@
 @import "_var";
+@import "_mixin.scss";
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -54,9 +55,8 @@ nav{
     width: 58px;
 }
 .tituloSections{
-    display: flex;
+    @include flex;
     padding: $padding; 
-    justify-content: space-evenly;
 }
 .link{
     text-align: center;
@@ -166,8 +166,7 @@ footer{
     margin: auto;
 }
 .conteinFooter{
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     padding: 20px
 }
 .columna{
@@ -256,8 +255,7 @@ $redes: (
 }
 .conteinCopy{
     padding: $padding;
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     align-items:baseline
 }
 .aboutUs{
@@ -355,9 +353,8 @@ article{
     }
 }
 .pack{
-    display: flex;
+    @include flex;
     flex-direction: row;
-    justify-content: space-around;
     background-color: rgb(90, 59, 2);
     opacity: 85%;
     margin: 20px;

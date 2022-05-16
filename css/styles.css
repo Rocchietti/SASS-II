@@ -51,8 +51,8 @@ nav {
 
 .tituloSections {
   display: flex;
-  padding: 10px;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  padding: 10px; }
 
 .link {
   text-align: center;
@@ -306,8 +306,8 @@ article h1 {
 
 .pack {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  justify-content: space-around;
   background-color: #5a3b02;
   opacity: 85%;
   margin: 20px; }
